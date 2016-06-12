@@ -47,7 +47,7 @@ class PostListAPIView(ListAPIView):
     serializer_class = PostListSerializer
     filter_backends = (SearchFilter, OrderingFilter)
     search_fields = ['title', 'content', 'user__first_name']
-    pagination_class = PostPageNumberPagination#PostLimitOffsetPagination #PageNumberPagination
+    pagination_class = PostPageNumberPagination #PostLimitOffsetPagination #PageNumberPagination
 
     def get_queryset(self, *args, **kwargs):
         # queryset_list = super(PostListAPIview, self).get_queryset(*args, **kwargs)
