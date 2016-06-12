@@ -46,6 +46,9 @@ INSTALLED_APPS = [
     'comments',
     'posts',
 
+    # ReST
+    'rest_framework'
+
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
